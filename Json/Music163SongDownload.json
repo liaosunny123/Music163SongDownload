@@ -1,0 +1,25 @@
+{
+  "name":"Music163SongDownload",
+  "clsid":"6966d3e8-c14b-4485-bd91-bd97d85002e1",
+  "author":"EpicMo",
+  "version":"1.0.0",
+  "exportWay":"cpp",
+  "description":"本插件提供网易云音乐服务。",
+  "coreRelative":"v1",
+  "exportCommand":"Netife.CppExport()",
+  "exportClassName":"CloudMusic",
+  "relativeChains":[
+    {
+      "name":"NetifePluginLib",
+      "version":"^1.0.0"
+    }
+  ],
+  "registerCommand":[
+    {
+      "class":"CloudMusic",
+      "command":"getLastDownloadUrl",
+      "description":"返回最近的歌曲下载链接"
+    }
+  ],
+  "registerHook":[]
+}
